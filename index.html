@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syed Haneefudeen | Finance & Business Analytics</title>
+  <meta name="description" content="Portfolio of Syed Haneefudeen — B.Com ISM student skilled in Tally Prime, Excel, auditing, and financial systems." />
+  <meta name="keywords" content="Syed Haneefudeen, B.Com ISM, Tally Prime, Excel, Auditing, Finance, Chennai" />
+  <meta property="og:title" content="Syed Haneefudeen | Portfolio" />
+  <meta property="og:description" content="Finance & Business Analytics professional portfolio." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    :root[data-theme="dark"] {
+      --bg: #0a0a0f;
+      --bg2: #111118;
+      --bg3: #1a1a24;
+      --border: rgba(255,255,255,0.07);
+      --text: #e8e8f0;
+      --text-muted: #7a7a9a;
+      --accent: #c8a96e;
+      --accent2: #7c6fcd;
+      --accent-glow: rgba(200,169,110,0.15);
+      --card: rgba(255,255,255,0.03);
+      --card-hover: rgba(255,255,255,0.06);
+      --nav-bg: rgba(10,10,15,0.92);
+      --shadow: 0 20px 60px rgba(0,0,0,0.5);
+    }
+    :root[data-theme="light"] {
+      --bg: #f5f4ef;
+      --bg2: #eceae0;
+      --bg3: #e0ddd0;
+      --border: rgba(0,0,0,0.08);
+      --text: #1a1a2e;
+      --text-muted: #5a5a7a;
+      --accent: #9a6f2e;
+      --accent2: #5c4fad;
+      --accent-glow: rgba(154,111,46,0.12);
+      --card: rgba(255,255,255,0.6);
+      --card-hover: rgba(255,255,255,0.9);
+      --nav-bg: rgba(245,244,239,0.92);
+      --shadow: 0 20px 60px rgba(0,0,0,0.12);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      transition: background 0.4s, color 0.4s;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: var(--nav-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 5%;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+      transition: all 0.3s;
+    }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      font-size: 1.4rem;
+      color: var(--accent);
+      letter-spacing: -0.5px;
+    }
+    .nav-links {
+      display: flex; gap: 2rem; list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--accent); }
+    .nav-right { display: flex; align-items: center; gap: 1rem; }
+    .theme-toggle {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.9rem;
+      transition: all 0.3s;
+    }
+    .theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
+    .hamburger {
+      display: none; background: none; border: none;
+      color: var(--text); font-size: 1.3rem; cursor: pointer;
+    }
+    .mobile-menu {
+      display: none; position: fixed; top: 64px; left: 0; right: 0;
+      background: var(--nav-bg); backdrop-filter: blur(20px);
+      padding: 1.5rem 5%; flex-direction: column; gap: 1rem;
+      border-bottom: 1px solid var(--border); z-index: 999;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      text-decoration: none; color: var(--text-muted);
+      font-size: 0.9rem; font-weight: 500;
+      text-transform: uppercase; letter-spacing: 0.05em;
+      transition: color 0.2s;
+    }
+    .mobile-menu a:hover { color: var(--accent); }
+
+    /* ── SECTIONS ── */
+    section { padding: 100px 8%; }
+    .container { max-width: 1100px; margin: 0 auto; }
+
+    .section-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--accent);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 0.6rem;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    .section-line {
+      width: 48px; height: 3px;
+      background: var(--accent);
+      margin-bottom: 3rem;
+      border-radius: 2px;
+    }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      display: flex; align-items: center;
+      padding-top: 64px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0; z-index: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 80% 40%, rgba(200,169,110,0.06) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 40% at 20% 70%, rgba(124,111,205,0.05) 0%, transparent 70%);
+    }
+    .hero-grid {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(var(--border) 1px, transparent 1px),
+        linear-gradient(90deg, var(--border) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, black 0%, transparent 100%);
+      -webkit-mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, black 0%, transparent 100%);
+    }
+    .hero-content { position: relative; z-index: 1; max-width: 800px; }
+    .hero-eyebrow {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.78rem;
+      color: var(--accent);
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+      opacity: 0; animation: fadeUp 0.8s 0.2s forwards;
+    }
+    .hero-name {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3rem, 8vw, 6rem);
+      font-weight: 900;
+      line-height: 1.0;
+      letter-spacing: -2px;
+      margin-bottom: 1rem;
+      opacity: 0; animation: fadeUp 0.8s 0.4s forwards;
+    }
+    .hero-name span { color: var(--accent); }
+    .hero-title {
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      color: var(--text-muted);
+      font-weight: 400;
+      margin-bottom: 1.5rem;
+      opacity: 0; animation: fadeUp 0.8s 0.6s forwards;
+    }
+    .hero-tagline {
+      font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+      color: var(--text);
+      max-width: 550px;
+      margin-bottom: 2.5rem;
+      line-height: 1.8;
+      opacity: 0; animation: fadeUp 0.8s 0.8s forwards;
+    }
+    .hero-btns {
+      display: flex; gap: 1rem; flex-wrap: wrap;
+      opacity: 0; animation: fadeUp 0.8s 1.0s forwards;
+    }
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.8rem 1.8rem;
+      border-radius: 6px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-decoration: none;
+      border: 2px solid transparent;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #0a0a0f;
+    }
+    .btn-primary:hover {
+      background: transparent;
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px var(--accent-glow);
+    }
+    .btn-outline {
+      background: transparent;
+      border-color: var(--border);
+      color: var(--text-muted);
+    }
+    .btn-outline:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .hero-scroll {
+      position: absolute; bottom: 2rem; left: 8%;
+      display: flex; align-items: center; gap: 0.8rem;
+      color: var(--text-muted); font-size: 0.78rem;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      opacity: 0; animation: fadeUp 0.8s 1.4s forwards;
+    }
+    .scroll-line {
+      width: 40px; height: 1px; background: var(--text-muted);
+      animation: scrollPulse 2s ease-in-out infinite;
+    }
+    @keyframes scrollPulse {
+      0%,100% { transform: scaleX(1); opacity:1; }
+      50% { transform: scaleX(0.5); opacity:0.4; }
+    }
+
+    @keyframes fadeUp {
+      from { opacity:0; transform: translateY(24px); }
+      to { opacity:1; transform: translateY(0); }
+    }
+
+    /* ── ABOUT ── */
+    #about .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    .about-text p {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      line-height: 1.9;
+    }
+    .about-text p strong { color: var(--text); }
+    .about-stats {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;
+    }
+    .stat-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: all 0.3s;
+    }
+    .stat-card:hover {
+      background: var(--card-hover);
+      border-color: var(--accent);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px var(--accent-glow);
+    }
+    .stat-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 0.3rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    /* ── SKILLS ── */
+    #skills { background: var(--bg2); }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+    .skill-category {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.8rem;
+      transition: all 0.3s;
+    }
+    .skill-category:hover {
+      background: var(--card-hover);
+      border-color: rgba(200,169,110,0.3);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+    .skill-cat-icon {
+      width: 42px; height: 42px;
+      border-radius: 10px;
+      background: var(--accent-glow);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .skill-cat-title {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .skill-tag {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+    .skill-tag:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-glow);
+    }
+
+    /* Skill bars */
+    .skill-bar-list { margin-top: 2.5rem; }
+    .skill-bar-item { margin-bottom: 1.3rem; }
+    .skill-bar-label {
+      display: flex; justify-content: space-between;
+      font-size: 0.88rem; margin-bottom: 0.5rem;
+      color: var(--text);
+    }
+    .skill-bar-label span:last-child { color: var(--accent); font-family: 'DM Mono', monospace; }
+    .skill-bar-track {
+      height: 5px; background: var(--bg3); border-radius: 10px; overflow: hidden;
+    }
+    .skill-bar-fill {
+      height: 100%; background: linear-gradient(90deg, var(--accent2), var(--accent));
+      border-radius: 10px; width: 0;
+      transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* ── EXPERIENCE ── */
+    .timeline { position: relative; }
+    .timeline::before {
+      content: ''; position: absolute; left: 20px; top: 0; bottom: 0;
+      width: 1px; background: var(--border);
+    }
+    .timeline-item {
+      padding-left: 60px; position: relative; margin-bottom: 3rem;
+    }
+    .timeline-dot {
+      position: absolute; left: 12px; top: 4px;
+      width: 17px; height: 17px;
+      border-radius: 50%;
+      border: 2px solid var(--accent);
+      background: var(--bg);
+      transition: all 0.3s;
+    }
+    .timeline-item:hover .timeline-dot {
+      background: var(--accent);
+      box-shadow: 0 0 16px var(--accent-glow);
+    }
+    .timeline-date {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--accent);
+      letter-spacing: 0.1em;
+      margin-bottom: 0.4rem;
+    }
+    .timeline-role {
+      font-size: 1.1rem; font-weight: 600; color: var(--text);
+      margin-bottom: 0.2rem;
+    }
+    .timeline-company {
+      font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.8rem;
+    }
+    .timeline-desc {
+      color: var(--text-muted); font-size: 0.93rem; line-height: 1.8;
+    }
+    .timeline-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.8rem; }
+    .timeline-tag {
+      background: var(--accent-glow);
+      color: var(--accent);
+      font-size: 0.75rem;
+      padding: 0.2rem 0.7rem;
+      border-radius: 20px;
+      font-weight: 500;
+    }
+
+    /* ── EDUCATION ── */
+    #education { background: var(--bg2); }
+    .edu-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2.5rem;
+      display: flex; gap: 2rem; align-items: flex-start;
+      transition: all 0.3s;
+    }
+    .edu-card:hover {
+      border-color: var(--accent);
+      background: var(--card-hover);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 48px var(--accent-glow);
+    }
+    .edu-icon {
+      width: 56px; height: 56px; min-width: 56px;
+      border-radius: 14px;
+      background: var(--accent-glow);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem; color: var(--accent);
+    }
+    .edu-degree {
+      font-size: 1.15rem; font-weight: 600; color: var(--text);
+      margin-bottom: 0.25rem;
+    }
+    .edu-school {
+      color: var(--accent); font-size: 0.9rem; margin-bottom: 0.2rem;
+      font-weight: 500;
+    }
+    .edu-period {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem; color: var(--text-muted);
+      margin-bottom: 0.8rem;
+    }
+    .edu-desc { color: var(--text-muted); font-size: 0.92rem; line-height: 1.8; }
+
+    /* ── PROJECTS ── */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .project-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+      transition: all 0.3s;
+      display: flex; flex-direction: column;
+    }
+    .project-card:hover {
+      background: var(--card-hover);
+      border-color: rgba(200,169,110,0.4);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 60px var(--accent-glow);
+    }
+    .project-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem; font-weight: 900;
+      color: var(--accent-glow);
+      line-height: 1; margin-bottom: 1rem;
+      color: rgba(200,169,110,0.15);
+    }
+    .project-title {
+      font-size: 1.1rem; font-weight: 700; color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+    .project-desc {
+      color: var(--text-muted); font-size: 0.9rem;
+      line-height: 1.8; flex: 1; margin-bottom: 1rem;
+    }
+    .project-tech { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .project-tech span {
+      background: var(--bg3); border: 1px solid var(--border);
+      color: var(--text-muted); padding: 0.2rem 0.65rem;
+      border-radius: 4px; font-family: 'DM Mono', monospace;
+      font-size: 0.73rem;
+    }
+
+    /* ── CERTIFICATIONS ── */
+    #certifications { background: var(--bg2); }
+    .certs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.2rem;
+    }
+    .cert-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      display: flex; gap: 1rem; align-items: flex-start;
+      transition: all 0.3s;
+    }
+    .cert-card:hover {
+      border-color: var(--accent);
+      background: var(--card-hover);
+      transform: translateY(-3px);
+    }
+    .cert-icon {
+      width: 40px; height: 40px; min-width: 40px;
+      border-radius: 10px;
+      background: var(--accent-glow);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--accent); font-size: 1rem;
+    }
+    .cert-title { font-size: 0.95rem; font-weight: 600; color: var(--text); margin-bottom: 0.2rem; }
+    .cert-issuer { font-size: 0.8rem; color: var(--text-muted); }
+
+    /* ── CONTACT ── */
+    #contact .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    .contact-info-text {
+      color: var(--text-muted); line-height: 1.8; margin-bottom: 2rem;
+    }
+    .contact-links { display: flex; flex-direction: column; gap: 1rem; }
+    .contact-link {
+      display: flex; align-items: center; gap: 1rem;
+      color: var(--text-muted); text-decoration: none;
+      padding: 1rem 1.2rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      transition: all 0.3s;
+    }
+    .contact-link:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--card-hover);
+      transform: translateX(6px);
+    }
+    .contact-link i {
+      width: 20px; text-align: center; color: var(--accent);
+    }
+    .contact-form { display: flex; flex-direction: column; gap: 1rem; }
+    .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+    .form-group label {
+      font-size: 0.8rem; color: var(--text-muted);
+      text-transform: uppercase; letter-spacing: 0.08em;
+    }
+    .form-group input, .form-group textarea {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.85rem 1rem;
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.92rem;
+      outline: none;
+      transition: border-color 0.2s;
+      resize: none;
+    }
+    .form-group input:focus, .form-group textarea:focus {
+      border-color: var(--accent);
+    }
+    .form-success {
+      display: none; background: var(--accent-glow);
+      border: 1px solid var(--accent);
+      border-radius: 8px; padding: 1rem;
+      color: var(--accent); font-size: 0.9rem; text-align: center;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 8%;
+      display: flex; align-items: center; justify-content: space-between;
+      color: var(--text-muted); font-size: 0.82rem;
+    }
+    .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700; color: var(--accent); font-size: 1rem;
+    }
+    .social-links { display: flex; gap: 1rem; }
+    .social-link {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: var(--card);
+      border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--text-muted); text-decoration: none;
+      font-size: 0.85rem;
+      transition: all 0.3s;
+    }
+    .social-link:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-glow);
+      transform: translateY(-3px);
+    }
+
+    /* ── SCROLL TO TOP ── */
+    #scrollTop {
+      position: fixed; bottom: 2rem; right: 2rem; z-index: 999;
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: none; cursor: pointer;
+      color: #0a0a0f;
+      font-size: 1rem;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 8px 24px var(--accent-glow);
+      opacity: 0; transform: translateY(20px);
+      transition: all 0.3s;
+      pointer-events: none;
+    }
+    #scrollTop.visible { opacity: 1; transform: translateY(0); pointer-events: all; }
+    #scrollTop:hover { transform: translateY(-4px); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      section { padding: 80px 6%; }
+      .nav-links { display: none; }
+      .hamburger { display: block; }
+      #about .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      #contact .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .edu-card { flex-direction: column; gap: 1rem; }
+      footer { flex-direction: column; gap: 1rem; text-align: center; }
+      .hero-btns { flex-direction: column; }
+      .btn { justify-content: center; }
+    }
+
+    /* Fade in on scroll */
+    .reveal {
+      opacity: 0; transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">SH.</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#skills" onclick="closeMobile()">Skills</a>
+  <a href="#experience" onclick="closeMobile()">Experience</a>
+  <a href="#education" onclick="closeMobile()">Education</a>
+  <a href="#projects" onclick="closeMobile()">Projects</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">📍 Chennai, Tamil Nadu &nbsp;·&nbsp; Open to Opportunities</div>
+    <h1 class="hero-name">Syed<br><span>Haneef</span>udeen</h1>
+    <p class="hero-title">Finance & Business Analytics · B.Com ISM · Aspiring Financial Analyst</p>
+    <p class="hero-tagline">Bridging financial acumen and data intelligence — turning numbers into decisions and records into insight.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn btn-primary"><i class="fas fa-envelope"></i> Contact Me</a>
+      <a href="#projects" class="btn btn-outline"><i class="fas fa-folder-open"></i> View Projects</a>
+      <a href="https://linkedin.com/in/syed-haneefudeen-81a449373" target="_blank" class="btn btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </div>
+  <div class="hero-scroll"><div class="scroll-line"></div> Scroll</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <div class="section-label">About Me</div>
+        <h2 class="section-title">Disciplined.<br>Analytical.<br>Detail-Driven.</h2>
+        <div class="section-line"></div>
+        <p>I'm a <strong>B.Com Information System Management</strong> student at the University of Madras with a passion for financial analysis, business intelligence, and operational efficiency.</p>
+        <p>With hands-on experience as an <strong>Audit Assistant at Veera Associates</strong>, I've assisted in auditing 8+ financial records and supported senior auditors in verification and reporting — building a sharp eye for accuracy and a process-first mindset.</p>
+        <p>I combine technical fluency in <strong>Tally Prime and Microsoft Excel</strong> with multilingual communication across Tamil, English, Urdu, and Hindi — allowing me to work across diverse teams and professional environments.</p>
+        <p>My goal: to evolve into a <strong>Financial Analyst or Business Intelligence professional</strong> who leverages data to drive real organizational value.</p>
+      </div>
+      <div class="about-stats reveal reveal-delay-2">
+        <div class="stat-card">
+          <div class="stat-number">8+</div>
+          <div class="stat-label">Financial Records Audited</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">4</div>
+          <div class="stat-label">Languages Spoken</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">3</div>
+          <div class="stat-label">Core Tech Tools</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">2027</div>
+          <div class="stat-label">Expected Graduation</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Capabilities</div>
+      <h2 class="section-title">Skills & Tools</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-category reveal">
+        <div class="skill-cat-icon"><i class="fas fa-chart-bar"></i></div>
+        <div class="skill-cat-title">Financial Tools</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Tally Prime</span>
+          <span class="skill-tag">Microsoft Excel</span>
+          <span class="skill-tag">Financial Reporting</span>
+          <span class="skill-tag">Auditing</span>
+        </div>
+      </div>
+      <div class="skill-category reveal reveal-delay-1">
+        <div class="skill-cat-icon"><i class="fas fa-laptop"></i></div>
+        <div class="skill-cat-title">Productivity & Office</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Microsoft Word</span>
+          <span class="skill-tag">MS Office Suite</span>
+          <span class="skill-tag">Documentation</span>
+          <span class="skill-tag">Data Entry</span>
+        </div>
+      </div>
+      <div class="skill-category reveal reveal-delay-2">
+        <div class="skill-cat-icon"><i class="fas fa-brain"></i></div>
+        <div class="skill-cat-title">Domain Knowledge</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Business Analytics</span>
+          <span class="skill-tag">Financial Systems</span>
+          <span class="skill-tag">ISM Principles</span>
+          <span class="skill-tag">Accounting</span>
+        </div>
+      </div>
+      <div class="skill-category reveal reveal-delay-3">
+        <div class="skill-cat-icon"><i class="fas fa-users"></i></div>
+        <div class="skill-cat-title">Soft Skills</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Communication</span>
+          <span class="skill-tag">Teamwork</span>
+          <span class="skill-tag">Attention to Detail</span>
+          <span class="skill-tag">Discipline</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skill Bars -->
+    <div class="skill-bar-list reveal" style="margin-top:3rem; max-width: 600px;">
+      <div class="skill-bar-item">
+        <div class="skill-bar-label"><span>Tally Prime</span><span>90%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-label"><span>Microsoft Excel</span><span>85%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-label"><span>Financial Documentation</span><span>80%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-label"><span>Business Analytics</span><span>70%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-label"><span>Microsoft Word</span><span>88%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Work History</div>
+      <h2 class="section-title">Experience</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Jun 2025 – Jul 2025</div>
+        <div class="timeline-role">Audit Assistant</div>
+        <div class="timeline-company"><i class="fas fa-building" style="margin-right:0.4rem;color:var(--accent)"></i>Veera Associates · Chennai</div>
+        <div class="timeline-desc">
+          Assisted in auditing 8+ financial records with precision, organized key financial documentation, and supported senior auditors in verification and reporting processes. Developed a strong foundation in financial compliance, record-keeping, and audit methodology.
+        </div>
+        <div class="timeline-tags">
+          <span class="timeline-tag">Auditing</span>
+          <span class="timeline-tag">Financial Records</span>
+          <span class="timeline-tag">Documentation</span>
+          <span class="timeline-tag">Verification</span>
+          <span class="timeline-tag">Reporting</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Academic Background</div>
+      <h2 class="section-title">Education</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="edu-card reveal">
+      <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+      <div>
+        <div class="edu-degree">B.Com Information System Management (ISM)</div>
+        <div class="edu-school">University of Madras · SIVET College, Chennai</div>
+        <div class="edu-period">07/2024 – 2027 (Expected)</div>
+        <div class="edu-desc">
+          Pursuing a specialized commerce degree integrating core accounting, financial systems, and information management. Developing hands-on expertise in auditing, business analytics, Tally Prime, and Excel-based financial modeling. Active focus on bridging traditional commerce with modern data intelligence tools.
+        </div>
+        <div class="skill-tags" style="margin-top:1rem;">
+          <span class="skill-tag">Financial Accounting</span>
+          <span class="skill-tag">Business Analytics</span>
+          <span class="skill-tag">Information Systems</span>
+          <span class="skill-tag">Tally Prime</span>
+          <span class="skill-tag">Excel</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Portfolio</div>
+      <h2 class="section-title">Projects</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-num">01</div>
+        <div class="project-title">Financial Audit Documentation System</div>
+        <div class="project-desc">Designed and organized a structured documentation workflow for auditing 8+ financial records at Veera Associates. Streamlined verification processes and improved audit trail accuracy for senior auditor reviews.</div>
+        <div class="project-tech">
+          <span>Tally Prime</span><span>MS Excel</span><span>MS Word</span>
+        </div>
+      </div>
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-num">02</div>
+        <div class="project-title">Excel-Based Financial Tracker</div>
+        <div class="project-desc">Built a dynamic Excel dashboard for tracking income statements, expense categorization, and basic financial ratios. Used conditional formatting and formulas to surface key business insights quickly.</div>
+        <div class="project-tech">
+          <span>Microsoft Excel</span><span>Data Visualization</span><span>Financial Modeling</span>
+        </div>
+      </div>
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-num">03</div>
+        <div class="project-title">Tally Prime Business Ledger Setup</div>
+        <div class="project-desc">Configured and maintained complete business ledger accounts in Tally Prime including voucher entries, day books, and trial balance sheets — ensuring accurate end-of-period financial reporting.</div>
+        <div class="project-tech">
+          <span>Tally Prime</span><span>Accounting</span><span>Ledger Management</span>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-num">04</div>
+        <div class="project-title">Business Analytics Case Study</div>
+        <div class="project-desc">Conducted an academic case study analyzing a mid-sized retail business's financial health through ratio analysis, trend identification, and profitability assessment using B.Com ISM curriculum frameworks.</div>
+        <div class="project-tech">
+          <span>Business Analytics</span><span>Ratio Analysis</span><span>Excel</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Credentials</div>
+      <h2 class="section-title">Certifications & Achievements</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="certs-grid">
+      <div class="cert-card reveal">
+        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+        <div>
+          <div class="cert-title">Tally Prime Proficiency</div>
+          <div class="cert-issuer">Accounting Software Certification</div>
+        </div>
+      </div>
+      <div class="cert-card reveal reveal-delay-1">
+        <div class="cert-icon"><i class="fas fa-file-excel"></i></div>
+        <div>
+          <div class="cert-title">Microsoft Excel – Financial Analysis</div>
+          <div class="cert-issuer">Advanced Spreadsheet & Modeling</div>
+        </div>
+      </div>
+      <div class="cert-card reveal reveal-delay-2">
+        <div class="cert-icon"><i class="fas fa-search-dollar"></i></div>
+        <div>
+          <div class="cert-title">Audit Assistant – Field Experience</div>
+          <div class="cert-issuer">Veera Associates, Chennai · 2025</div>
+        </div>
+      </div>
+      <div class="cert-card reveal reveal-delay-3">
+        <div class="cert-icon"><i class="fas fa-language"></i></div>
+        <div>
+          <div class="cert-title">Multilingual Professional</div>
+          <div class="cert-issuer">Tamil · English · Urdu · Hindi</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Let's Connect</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <p class="contact-info-text">I'm open to internship opportunities, freelance accounting work, and collaborative academic projects. Feel free to reach out — I'd love to connect!</p>
+        <div class="contact-links">
+          <a href="mailto:haneefudeensyed@gmail.com" class="contact-link">
+            <i class="fas fa-envelope"></i> haneefudeensyed@gmail.com
+          </a>
+          <a href="tel:8667597291" class="contact-link">
+            <i class="fas fa-phone"></i> +91 86675 97291
+          </a>
+          <a href="https://linkedin.com/in/syed-haneefudeen-81a449373" target="_blank" class="contact-link">
+            <i class="fab fa-linkedin"></i> linkedin.com/in/syed-haneefudeen-81a449373
+          </a>
+          <a href="#" class="contact-link">
+            <i class="fas fa-map-marker-alt"></i> Chennai, Tamil Nadu, India
+          </a>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div class="contact-form">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" id="cName" placeholder="John Doe" />
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" id="cEmail" placeholder="john@email.com" />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea id="cMsg" rows="5" placeholder="Hi Haneef, I'd love to connect..."></textarea>
+          </div>
+          <button class="btn btn-primary" onclick="handleContact()">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-success" id="formSuccess">
+            ✅ Message sent! I'll get back to you shortly.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Syed Haneefudeen</div>
+  <span style="color:var(--text-muted);font-size:0.8rem;">© 2025 · Built with passion</span>
+  <div class="social-links">
+    <a href="mailto:haneefudeensyed@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+    <a href="https://linkedin.com/in/syed-haneefudeen-81a449373" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="tel:8667597291" class="social-link" title="Phone"><i class="fas fa-phone"></i></a>
+  </div>
+</footer>
+
+<!-- SCROLL TO TOP -->
+<button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+  // Theme Toggle
+  const html = document.documentElement;
+  const toggle = document.getElementById('themeToggle');
+  const icon = toggle.querySelector('i');
+  toggle.addEventListener('click', () => {
+    const isDark = html.getAttribute('data-theme') === 'dark';
+    html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+    icon.className = isDark ? 'fas fa-moon' : 'fas fa-sun';
+  });
+
+  // Hamburger
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+  function closeMobile() { mobileMenu.classList.remove('open'); }
+
+  // Scroll to top visibility
+  const scrollTopBtn = document.getElementById('scrollTop');
+  window.addEventListener('scroll', () => {
+    scrollTopBtn.classList.toggle('visible', window.scrollY > 500);
+  });
+
+  // Reveal on scroll
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(r => observer.observe(r));
+
+  // Skill bars
+  const barObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.querySelectorAll('.skill-bar-fill').forEach(bar => {
+          bar.style.width = bar.dataset.width + '%';
+        });
+        barObserver.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  document.querySelectorAll('.skill-bar-list').forEach(el => barObserver.observe(el));
+
+  // Contact form
+  function handleContact() {
+    const name = document.getElementById('cName').value.trim();
+    const email = document.getElementById('cEmail').value.trim();
+    const msg = document.getElementById('cMsg').value.trim();
+    if (!name || !email || !msg) { alert('Please fill in all fields.'); return; }
+    const mailtoLink = `mailto:haneefudeensyed@gmail.com?subject=Portfolio Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent(msg + '\n\nFrom: ' + name + '\nEmail: ' + email)}`;
+    window.location.href = mailtoLink;
+    document.getElementById('formSuccess').style.display = 'block';
+    document.getElementById('cName').value = '';
+    document.getElementById('cEmail').value = '';
+    document.getElementById('cMsg').value = '';
+  }
+
+  // Active nav link
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 100) current = s.id;
+    });
+    navLinks.forEach(a => {
+      a.style.color = a.getAttribute('href') === '#' + current ? 'var(--accent)' : '';
+    });
+  });
+</script>
+</body>
+</html>
